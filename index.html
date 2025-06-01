@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+]        <header class="navbar">
+            <div class="navbar-logo">Let's Chat</div>
+            <div class="navbar-actions">
+                <button id="darkModeToggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i> 
+                </button>
+                <div class="navbar-user-avatar">CL</div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <aside class="contacts-panel" id="contactsPanel">
+                <div class="contacts-header">
+                    <h2>Chats</h2>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle contacts menu">
+                        <i class="fas fa-times"></i> 
+                    </button>
+                </div>
+                <ul class="contacts-list" id="contactsList">
+                </ul>
+            </aside>
+
+            <!-- Center Main Chat Area -->
+            <section class="chat-panel">
+                <header class="chat-header" id="chatHeader">
+                </header>
+                <div class="chat-messages" id="chatMessages">
+                </div>
+                <footer class="chat-input-area">
+                    <textarea id="messageInput" placeholder="Type a message..." rows="1"></textarea>
+                    <button id="sendMessageBtn" aria-label="Send message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </footer>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>© 2024 Chat App. Frontend Only.</p>
+        </footer>
+    </div>
+
+    <button class="mobile-menu-fab" id="mobileMenuFab" aria-label="Open contacts menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
